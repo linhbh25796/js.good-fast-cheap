@@ -1,0 +1,41 @@
+<html>
+<head>
+    <title>Good Fast Cheap</title>
+
+</head>
+<body>
+<form name="gfc">
+    <input type="checkbox" name="good"
+           onClick="return KeepCount()"> Good
+
+    <input type="checkbox" name="fast"
+           onClick="return KeepCount()"> Fast
+
+    <input type="checkbox" name="cheap"
+           onClick="return KeepCount()"> Cheap
+
+</form>
+<script>
+    function KeepCount() {
+
+        let NewCount = 0;
+
+        if (document.gfc.good.checked) {
+            NewCount = NewCount + 1;
+        }
+        if (document.gfc.fast.checked) {
+            NewCount = NewCount + 1;
+        }
+        if (document.gfc.cheap.checked) {
+            NewCount = NewCount + 1;
+        }
+        if (NewCount === 3) {
+            alert('Pick  Two Please');
+            document.gfc;
+            return false;
+        }
+
+    }
+</script>
+</body>
+</html>
